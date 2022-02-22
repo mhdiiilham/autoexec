@@ -16,32 +16,32 @@ func main() {
 	fmt.Println("auto exec CSGO")
 
 	var (
-		source         string = ""
-		steamID32      string = ""
+		source         string = "https://raw.githubusercontent.com/mhdiiilham/csgo-cfg/master/auto.cfg"
+		steamID32      string = "416307248"
 		steamDirectory string = ""
-		configName     string = ""
+		configName     string = "auto"
 	)
 
 	reader := bufio.NewReader(os.Stdin)
 
 	for source == "" || steamID32 == "" || steamDirectory == "" {
 
-		fmt.Println("Please input your argument")
-		fmt.Print("Steam ID32: ")
-		steamID32, _ = reader.ReadString('\n')
-		steamID32 = strings.ReplaceAll(steamID32, "\r\n", "")
+		// fmt.Println("Please input your argument")
+		// fmt.Print("Steam ID32: ")
+		// steamID32, _ = reader.ReadString('\n')
+		// steamID32 = strings.ReplaceAll(steamID32, "\r\n", "")
 
-		fmt.Print("config source: ")
-		source, _ = reader.ReadString('\n')
-		source = strings.ReplaceAll(source, "\r\n", "")
+		// fmt.Print("config source: ")
+		// source, _ = reader.ReadString('\n')
+		// source = strings.ReplaceAll(source, "\r\n", "")
 
 		fmt.Print("steam directory: ")
 		steamDirectory, _ = reader.ReadString('\n')
 		steamDirectory = strings.ReplaceAll(steamDirectory, "\r\n", "")
 
-		fmt.Print("config name (optional): ")
-		configName, _ = reader.ReadString('\n')
-		configName = strings.ReplaceAll(configName, "\r\n", "")
+		// fmt.Print("config name (optional): ")
+		// configName, _ = reader.ReadString('\n')
+		// configName = strings.ReplaceAll(configName, "\r\n", "")
 
 	}
 
