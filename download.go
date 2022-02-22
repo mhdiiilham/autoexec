@@ -16,6 +16,7 @@ func DownloadConfig(url string) ([]byte, error) {
 		return emptyBytes, err
 	}
 
+	defer resp.Body.Close()
 	bodyBytes, err := io.ReadAll(resp.Body)
 	if err != nil {
 		log.Printf("io.ReadAll return an error: %v", err)
