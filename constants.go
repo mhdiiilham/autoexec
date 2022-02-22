@@ -12,4 +12,6 @@ const (
 	CSGO_GAME_CODE   = "730"
 	CSGO_FILE_DST    = "local" // need to rename this
 	CSGO_CFG_GILE    = "cfg"
+
+	PRO_SETTING_DOWNLOAD = "https://prosettings.net/configs/%s.zip"
 )
